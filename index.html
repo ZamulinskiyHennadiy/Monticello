@@ -29,16 +29,16 @@
         <nav>
           <ul class="nav-links">
             <li>
-              <h3><a href="#ABOUT"><span class="dot" onclick="currentSlide(0)"></span>ABOUT US</a></h3>
+              <h3><a href="#ABOUT"><input type="radio" name="radio">ABOUT US</a></h3>
             </li>
             <li>
-              <h3><a href="#PROJECTS"><span class="dot" onclick="currentSlide(1)"></span>PROJECTS</a></h3>
+              <h3><a href="#PROJECTS"><input type="radio" name="radio">PROJECTS</a></h3>
             </li>
             <li>
-              <h3><a href="#News"><span class="dot" onclick="currentSlide(2)"></span>News</a></h3>
+              <h3><a href="#News"><input type="radio" name="radio">News</a></h3>
             </li>
             <li>
-              <h3><a href="#Contacts"><span class="dot" onclick="currentSlide(3)"></span>Contacts</a></h3>
+              <h3><a href="#Contacts"><input type="radio" name="radio">Contacts</a></h3>
             </li>
           </ul>
         </nav>
@@ -55,46 +55,41 @@
         </div>
       </div>
 
-      <div class="bigslider">
+      <div class="text1">
+        <h1>SIMPLE & MODERN</h1>
+        <p>We Make The World Beautiful Everyday</p>
+      </div>
+
+      <div class="bigslider" id="ABOUT">
         <div class="bigslides">
 
           <div class="slide" id="slide1">
             <img src="img-big/hero.png" alt="картинка 1">
             <div class="caption">
-              <h1>SIMPLE & MODERN</h1>
-              <p>We Make The World Beautiful Everyday</p>
             </div>
           </div>
 
           <div class="slide" id="slide2">
             <img src="img-big/photes 4.png" alt="картинка 2">
             <div class="caption">
-              <h1>SIMPLE & MODERN</h1>
-              <p>We Make The World Beautiful Everyday</p>
             </div>
           </div>
 
           <div class="slide" id="slide3">
             <img src="img-big/Mask group.png" alt="картинка 3">
             <div class="caption">
-              <h1>SIMPLE & MODERN</h1>
-              <p>We Make The World Beautiful Everyday</p>
             </div>
           </div>
 
           <div class="slide" id="slide4">
             <img src="img-big/photos 2.png" alt="картинка 4">
             <div class="caption">
-              <h1>SIMPLE & MODERN</h1>
-              <p>We Make The World Beautiful Everyday</p>
             </div>
           </div>
 
           <div class="slide" id="slide5">
             <img src="img-big/photos 3.png" alt="картинка 5">
             <div class="caption">
-              <h1>SIMPLE & MODERN</h1>
-              <p>We Make The World Beautiful Everyday</p>
             </div>
           </div>
         </div>
@@ -111,8 +106,9 @@
   </header>
 
   <section class="center">
-    <article class="PROJECTS">
+    <article class="PROJECTS" id="PROJECTS">
       <div class="text">
+        <hr>
         <h2>WHAT WE DO</h2>
       </div>
       <div class="tt">
@@ -151,8 +147,9 @@
       </div>
     </article>
 
-    <article class="card-slide">
+    <article class="card-slide" id="News">
       <div class="textt">
+        <hr>
         <h2>LATEST NEWS</h2>
       </div>
       <div class="cards">
@@ -176,18 +173,26 @@
               <div class="slideg"><img src="img-center/image 2.png" alt="photo2"></div>
               <h4>EFFECTIVE ADVERTISING POINTERS.</h4>
               <p>Having a home based business is a wonderful asset to your life...</p>
-              <img class="ava" src="litle-img/photos  2.png">
-              <h4>DOMINIC FREEMAN</h4>
-              <span>13 Dec 2019</span>
+              <div class="avaa">
+                <img class="ava" src="litle-img/photos  2.png">
+                <div class="qq">
+                  <h4>DOMINIC FREEMAN</h4>
+                  <span>13 Dec 2019</span>
+                </div>
+              </div>
             </div>
 
             <div class="cardo">
               <div class="slideg"> <img src="img-center/image 3.png" alt="photo3"></div>
               <h4>HYPNOTIZE YOURSELF INTO THE GHOST.</h4>
               <p>There are many things that are important to catalog design...</p>
-              <img class="ava" src="litle-img/photos 3.png">
-              <h4>ALICE WARD</h4>
-              <span>30 Nov 2019</span>
+              <div class="avaa">
+                <img class="ava" src="litle-img/photos 3.png">
+                <div class="qq">
+                  <h4>ALICE WARD</h4>
+                  <span>30 Nov 2019</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -197,19 +202,65 @@
 
   <article class="GALLERY">
     <div class="fons">
-      <h3>GALLERY</h3>
+      <hr>
+      <h2>GALLERY</h2>
       <div class="pictor">
         <img src="img-big/Mask group.png">
+        <div class="pictors">
+          <img src="img-big/photos 2.png">
+          <img src="img-big/photos 3.png">
+          <img src="img-big/photes 4.png">
+          <img src="img-big/hero.png">
+        </div>
       </div>
-      <div class="pictors">
-        <img src="img-big/photos 2.png">
-        <img src="img-big/photos 3.png">
-        <img src="img-big/photes 4.png">
-        <img src="img-big/hero.png">
+      <div>
+        <a href="#" class="btn1">SEE MORE</a>
       </div>
-      <a href="#" class="btn">SEE MORE</a>
     </div>
   </article>
+
+  <section class="contacts" id="contacts">
+    <div class="form">
+      <hr>
+      <h2>GET IN TOUCH</h2>
+      <div class="window">
+        <div class="smart-contacts">
+          <p><i class="fas fa-map-marker-alt"></i> 91 Nolan Extensions Suite 670</p>
+          <p><i class="fas fa-phone"></i> +001 356-868-2454</p>
+          <p><i class="fas fa-envelope"></i> montichello@service.com</p>
+          <p><i class="fas fa-clock"></i> From 07:05AM to 19:30PM</p>
+        </div>
+        <div class="litle-form">
+          <input type="text" name="name" placeholder="Mollie Medina" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <a href="#" class="btn">Submit</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="map">
+      <img src="./img-center/snazzy-image-2 1.png" alt="map">
+    </div>
+  </section>
+
+  <footer>
+    <div>
+      <img src="./local/Logo.svg" alt="logo">
+      <p>Copyrights © 2020 Montichello</p>
+    </div>
+
+    <div class="Local">
+      <div class="box">
+        <img src="local/facebook-icon.svg" alt="facebook">
+      </div>
+      <div class="box">
+        <img src="local/twitter-icon.svg" alt="twitter">
+      </div>
+      <div class="box">
+        <img src="local/instagram-icon.svg" alt="instagram">
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
