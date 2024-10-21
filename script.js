@@ -42,3 +42,46 @@ function autoSlideShow() {
 
 // Запуск автоматичного слайд-шоу (при бажанні)
 autoSlideShow();
+
+
+
+const slider = document.querySelector('.end');
+const slides = document.querySelectorAll('.cardo');
+const prevBtn = document.querySelector('.prev-btn');
+const nextBtn = document.querySelector('.next-btn');
+
+let currentIndex = 0;
+const slidesToShow = 3; // Кількість видимих слайдів
+const totalSlides = slides.length;
+const maxIndex = totalSlides - slidesToShow; // Остання позиція, на якій зупиняється слайдер
+
+prevBtn.addEventListener('click', () => {
+  if (currentIndex > 0) {
+    currentIndex--;
+    updateSliderPosition();
+  }
+  checkButtons();
+});
+
+nextBtn.addEventListener('click', () => {
+  if (currentIndex < maxIndex) {
+    currentIndex++;
+    updateSliderPosition();
+  }
+  checkButtons();
+});
+
+function updateSliderPosition() {
+  // Зсув слайдера в залежності від поточного індексу
+  slider.style.transform = `translateX(-${currentIndex * (100 / slidesToShow)}%)`;
+}
+
+function checkButtons() {
+  // Блокуємо кнопку "Назад", якщо слайдер на початку
+  prevBtn.disabled = currentIndex === 0;
+  // Блокуємо кнопку "Вперед", якщо слайдер досяг останніх трьох слайдів
+  nextBtn.disabled = currentIndex === maxIndex;
+}
+
+// Перевірка кнопок при завантаженні сторінки
+checkButtons();

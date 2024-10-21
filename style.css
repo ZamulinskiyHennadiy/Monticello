@@ -140,6 +140,10 @@ body {
   gap: 10px;
 }
 
+.box:hover {
+  transform: scale(1.1);
+}
+
 .Local img {
   width: 24px;
   height: 24px;
@@ -281,19 +285,57 @@ body {
   width: 1600px;
   height: 900px;
   background-color: #55B7FF;
+  padding: 10px;
 }
 
 .cardo {
   width: 320px;
   height: 535px;
   background-color: #f6f7f8f0;
-  padding: 0px;
+  padding: 0;
+}
+
+.card-treck {
+  display: flex;
+  align-items: center;
+  width: 1600px;
+  overflow: hidden;
+}
+
+button {
+  font-size: 16px;
+  border-radius: 50px;
+  background-color: #3333332c;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #aaaaaa0a;
+  cursor: not-allowed;
+}
+
+.cardo:hover {
+  transform: scale(1.1);
+}
+
+.cardo h4 {
+  text-align: center;
+}
+
+.cardo p {
+  text-align: center;
 }
 
 .end {
+  padding: 10px;
   display: flex;
   width: 1600px;
   justify-content: space-evenly;
+  transition: transform 0.5s ease-in-out;
+  gap: 218px;
 }
 
 .cards {
@@ -373,6 +415,7 @@ h2 {
   height: 1000px;
   display: flex;
   flex-direction: column;
+  cursor: -webkit-zoom-in;
 }
 
 .pictors {
@@ -384,6 +427,10 @@ h2 {
   align-items: flex-start;
   justify-content: space-evenly;
   align-content: flex-end;
+}
+
+.pictors img:hover {
+  transform: scale(1.2);
 }
 
 .btn1 {
